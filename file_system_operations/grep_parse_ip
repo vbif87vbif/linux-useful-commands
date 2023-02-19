@@ -1,0 +1,2 @@
+--get ip from output of commenad "minikube kubectl -- cluster-info"
+minikube kubectl -- cluster-info | grep -E -o -m 1 "[0-9]{,3}+\.[0-9]{,3}+\.[0-9]{,3}+\.[0-9]{,3}:[0-9]{,5}"
