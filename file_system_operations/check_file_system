@@ -1,0 +1,9 @@
+# if you have corrupted file system you can check it with fsck
+# Typical error for this case: Read-only file system
+
+
+sudo fsck -Af -M
+# output: fsck from util-linux 2.20.1
+
+sudo fsck.ext4 -f /dev/sda1
+# fix problems if you have
